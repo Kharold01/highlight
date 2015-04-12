@@ -7,7 +7,7 @@ Javascript Syntax Highlighter
 
 <script type="text/javascript">
 var languages = {
-  javascript: /\b(function|return|var)\b/g /* ... etc */
+  javascript: /\b(function|return|var|if|new)\b/g /* ... etc */
 };
 
 function highlightAllCode() {
@@ -25,6 +25,10 @@ function highlightAllCode() {
 <p>Here it is, the identity function:</p>
 <pre data-language="javascript">
 function id(x) { return x; }
+var person = new object();
+	if (person = "Katie"){
+		return true;
+}
 </pre>
 
 <script>highlightAllCode();</script>
