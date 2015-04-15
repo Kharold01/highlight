@@ -6,21 +6,23 @@ Javascript Syntax Highlighter
 <script type="text/javascript" src="js/highlightCode.js"></script>
 <script type="text/javascript" src="js/highlightAllCode.js"></script>
 
-<script type="text/javascript">
-var languages = {
-  javascript: /\b(function|return|var|if|new)\b/g /* ... etc */
-};
-</script>
+
 </head>
 <body>
 <p>Here it is, the identity function:</p>
-<pre data-language="javascript" fooness-factor="Monumental">
+<pre data-language="javascript" class-proof="katie">
 function id(x) { return x; }
 var person = new object();
 	if (person = "Katie"){
 		return true;
 }
 </pre>
+<pre data-language="javascript">
+function myFunction(a, b) {
+	return a * b;
+}
+</pre>
+
 
 <script>highlightAllCode();</script>
 </body>
